@@ -11,7 +11,7 @@ public class MessageListener extends ListenerAdapter {
         super.onGuildMessageReceived(event);
         Message message = event.getMessage();
         String text = message.getContentRaw();
-
-        
+        // ここより下にプログラムを書く
+        System.out.println(text);
     }
 }

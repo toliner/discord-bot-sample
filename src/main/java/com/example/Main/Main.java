@@ -9,6 +9,7 @@ public class Main {
     public static void main(String[] args) throws LoginException {
         JDABuilder builder = JDABuilder.createDefault("**********");
         builder.enableIntents(GatewayIntent.GUILD_MESSAGES);
+        builder.addEventListeners(new MessageListener());
         builder.build();
     }
 }
